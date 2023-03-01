@@ -14,23 +14,58 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header-block">
-        <div class="block-logo"><a href="#"><img src="#" alt="LOGO"></a></div>
-        <div class="block-tel">+7 (123) 456 78 90</div>
-        <div class="block-btn"><button class=" btn salons-btn">Наши салоны</button></div>
-        <div class="block-visually-impaired">
+      <div class="header-block d-flex justify-content-sb align-items-center text-center">
+        <div class="line"></div>
+        <div class="block-logo flex"><a href="#"><img src="./img/logo.png" alt="LOGO"></a></div>
+        <div class="line"></div>
+        <div class="block-tel flex">+7 (123) 456 78 90</div>
+        <div class="line"></div>
+        <div class="block-btn flex d-flex">
+          <a href="#" class="flex">
+            <div class="block-btn-name">Наши салоны</div>
+          </a>
+          <a href="#" class="flex">
+            <button class="btn btn-salons">
+              <img src="./img/arrow-bottom.png" alt="arrow-bottom">
+            </button>
+          </a>
+        </div>
+        <div class="line"></div>
+        <div class="block-visually-impaired flex">
           <div class="visually-impaired">
-            <div class="icon-visually-impaired"><img src="#" alt=""></div>
-            <button class=" btn btn-visually-impaired">Версия для слабовидящих</button>
+            <a href="#" alt="btn-visually-impaired">
+              <div class="icon-visually-impaired"><img src="./img/eye.png" alt="eye"></div>
+              <button class="btn btn-visually-impaired"></button>
+            </a>
           </div>
         </div>
-        <div class="social">
-          <ul class="social-list">
-            <li class="social-item"><a href="#"><img src="#" alt=""></a></li>
-            <li class="social-item"><a href="#"><img src="#" alt=""></a></li>
-            <li class="social-item"><a href="#"><img src="#" alt=""></a></li>
-            <li class="social-item"><a href="#"><img src="#" alt=""></a></li>
-          </ul>
+        <div class="line"></div>
+        <div class="social flex">
+          <div class="social-list d-flex align-items-center">
+            <div class="social-item flex">
+              <a href="#">
+                <img src="./img/social1.png" alt="">
+              </a>
+            </div>
+            <div class="line"></div>
+            <div class="social-item flex">
+              <a href="#">
+                <img src="./img/social2.png" alt="">
+              </a>
+            </div>
+            <div class="line"></div>
+            <div class="social-item flex">
+              <a href="#">
+                <img src="./img/social3.png" alt="">
+              </a>
+            </div>
+            <div class="line"></div>
+            <div class="social-item flex">
+              <a href="#">
+                <img src="./img/social4.png" alt="">
+              </a>
+            </div>
+            <div class="line"></div>
         </div>
       </div>
     </div>
@@ -38,31 +73,37 @@
 
   <div class="section-home-screen">
     <div class="container">
-      <nav class="home-screen-nav">
-        <ul>
-          <li>Косметология</li>
-          <li>Пластическая хирургия</li>
-          <li>Стоматология</li>
-          <li>Лазерная медицина</li>
-          <li>Контакты</li>
+      <nav class="home-screen-nav d-flex align-items-center">
+        <ul class="d-flex justify-content-se flex">
+          <li><a href="#">Косметология</a></li>
+          <li><a href="#">Пластическая хирургия</a></li>
+          <li><a href="#">Стоматология</a></li>
+          <li><a href="#">Лазерная медицина</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-        <button class=" btn btn-record">Запись на прием</button>
+        <div class="home-screen-record">
+          <a href="#">
+            <button class="btn btn-record">
+              Запись на прием
+            </button>
+          </a>
+        </div>
       </nav>
 
-      <div class="home-screen-topic">
+      <div class="home-screen-topic d-flex justify-content-sb">
         <div class="topic-info">
           <h1>Косметология</h1>
           <p>Современный мир диктует новые каноны жизни: ухоженное лицо и тело, стройная, подтянутая фигура — сегодня
             это неотъемлемые черты привлекательной внешности, характеризующие человека благополучного и успешного.</p>
           <button class="btn btm-more">подробнее</button>
         </div>
-        <div class="topic-img"><img src="" alt=""></div>
+        <img src="./img/img-topic.png" alt="">
       </div>
 
-      <div class="home-screene-footer">
-        <button class="btn">Комплексные процедуры</button>
-        <button class="btn">Центр обучения</button>
-        <button class="btn">VIP клиентам</button>
+      <div class="home-screene-footer d-flex">
+        <button class="btn btn-procedures">Комплексные процедуры</button>
+        <button class="btn btn-education">Центр обучения</button>
+        <button class="btn btn-vip">VIP клиентам</button>
       </div>
     </div>
   </div>
@@ -70,44 +111,54 @@
   <div class="section-main">
     <div class="container">
       <div class="main-inovation">
-        <div class="inovation">
-          <div class="anchor inovation-anchor">
-            Инновации
-          </div>
+        <div class="inovation d-flex">
+         <a href="#">
+            <div class="anchor inovation-anchor">
+              Инновации
+            </div>
+         </a>
           <div class="inovation-title">
             Мы практикуем новый курс процедур аппаратной косметологии
           </div>
           <div class="inovation-arrow">
-            <div class="arrow"></div>
-            <button classs="btn">Подробнее</button>
+            <a href="#">
+              <button class="btn btn-arrow d-flex align-items-center">
+                <div class="arrow d-flex justify-content-center align-items-center">
+                  <img src="./img/arrow-right.png" alt="">
+                </div>
+                <div class="btn-arrow-desc">Подробнее</div>
+              </button>
+            </a>
           </div>
           <div class="inovation-img">
-            <img src="#" alt="">
+            <img src="./img/innovations__img.png" alt="">
           </div>
         </div>
       </div>
 
       <div class="main-aesthetics">
         <div class="aesthetic">
-          <div class="anchor aesthetic-anchor">
-            Эстетика красоты
-          </div>
-          <ul>
+          <a href#>
+            <div class="anchor aesthetic-anchor">
+              Эстетика красоты
+            </div>
+          </a>
+          <ul class="aesthetic-dignity">
             <li>
-              78 Современных центра в странах СНГ
+              <span>78</span> Современных центра в странах СНГ
             </li>
             <li>
-              78 Современных центра в странах СНГ
+              <span>78</span> Современных центра в странах СНГ
             </li>
             <li>
-              <span>20 Уникальных патентов в области косметологии</span>
+              <span class="dignity-big">20 Уникальных патентов в области косметологии</span>
             </li>
             <li>
-              78 Современных центра в странах СНГ
+              <span>78</span> Современных центра в странах СНГ
             </li>
           </ul>
           <div class="aesthetic-img">
-            <img src="#" alt="">
+            <img src="./img/patent.png" alt="">
           </div>
         </div>
       </div>

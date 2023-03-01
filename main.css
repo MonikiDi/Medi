@@ -1,11 +1,299 @@
 body {
-  font-family: 'Gilroy-Black';
+  font-family: 'Gilroy-Medium';
 }
 
 .container {
+  margin: 0 auto;
   max-width: 1295px;
 }
 
-.title-topic h1 {
-  font-family: 'Gilroy-Black';
+.d-flex {
+  display: flex;
+}
+
+.justify-content-sb {
+  justify-content: space-between;
+}
+
+.justify-content-sa {
+  justify-content: space-around;
+}
+
+.justify-content-se {
+  justify-content: space-evenly;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.flex {
+  flex: 1 1 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* btn */
+.btn {
+  width: 270px;
+  height: 40px;
+  background: #00868A;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.btn-salons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  background: #4FBFA5;
+  border-radius: 100%;
+}
+
+.btn-record {
+  padding: 10px 15px;
+  width: 175px;
+  height: 40px;
+  background: #FFFFFF;
+  text-transform: none;
+  font-size: 18px;
+  color: #000000;
+}
+
+.btm-more {
+  padding: 15px 25px;
+  width: 163px;
+  height: 50px;
+}
+
+.btn-procedures {
+  width: 648px;
+  height: 80px;
+  font-size: 21px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: none;
+}
+
+.btn-education {
+  background: #4FBFA5;
+  width: 324px;
+  height: 80px;
+  font-size: 21px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: none;
+}
+
+.btn-vip {
+  width: 324px;
+  height: 80px;
+  font-size: 21px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: none;
+}
+
+.btn-arrow{
+  width: 170px;
+  height: 40px;
+}
+
+/* block-visually-impaired */
+.icon-visually-impaired {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.icon-visually-impaired::after {
+  padding-left: 10px;
+  content: "версия для слабовидящих";
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.visually-impaired a {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 270px;
+  height: 40px;
+}
+
+/* social */
+.social-item a {
+  padding: 0 28px;
+}
+
+/* anchor */
+.anchor {
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background: #4FBFA5;
+}
+
+.anchor a {
+  color: #FFFFFF;
+}
+
+.inovation-anchor {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  width: 125px;
+  height: 40px;
+}
+.inovation-anchor a{
+  display: block;
+  width: 125px;
+  height: 40px;
+}
+.aesthetic-anchor{
+  width: 186px;
+  height: 40px;
+}
+/* header */
+.line {
+  height: 90px;
+  opacity: 0.5;
+  border: 1px solid #C4C4C4;
+}
+
+.block-logo a {
+  display: block;
+}
+
+.block-tel {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.block-btn a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+/* section-home-screen */
+.section-home-screen {
+  background: #4FBFA5;
+}
+
+.home-screen-nav {
+  padding: 24px 0;
+}
+
+.home-screen-nav a {
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.home-screen-record {
+  display: flex;
+  flex: 1;
+  justify-content: right;
+}
+
+.home-screen-record a {
+  position: relative;
+  right: 10px;
+  display: block;
+  width: 175px;
+  height: 40px;
+}
+
+.topic-info {
+  padding: 132px 0;
+}
+
+.topic-info h1 {
+  font-family: 'Gilroy-Bold';
+  font-size: 48px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.topic-info p {
+  width: 416px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.topic-info button {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.topic-info img {
+  width: 746px;
+}
+
+/* section-main */
+/* main-inovation */
+.main-inovation{
+  padding: 80px 0;
+  width: 526px;
+}
+.inovation {
+  background: #00868A;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inovation-title {
+  position: relative;
+  left: 40px;
+  width: 485px;
+  margin-top: 105px;
+  font-size: 30px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.inovation-arrow{
+  position: relative;
+  height: 40px;
+  width: 170px;
+  left: 40px;
+}
+.arrow{
+  margin-right: 20px;
+  width: 50px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+}
+.inovation-arrow{
+  margin-bottom: 45px;
+}
+/* main-aesthetics */
+.main-aesthetics{
+  background-color: #C4C4C4;
+}
+.aesthetic{
+  
 }
